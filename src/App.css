@@ -1,1 +1,63 @@
 @import "tailwindcss";
+/* Toggle Button */
+.menu-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 100;
+  background: none;
+  border: 1px solid #fff;
+  color: #fff;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-weight: bold;
+  background-color: #5227FF;
+}
+
+/* Sidebar Panel */
+.menu-panel {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%; /* Full width for mobile */
+  height: 100vh;
+  background: #5227FF;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 40px;
+  z-index: 90;
+  box-sizing: border-box;
+}
+
+/* Desktop sizing */
+@media (min-width: 768px) {
+  .menu-panel {
+    width: 400px; /* Partial width for desktop */
+  }
+}
+
+.menu-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.menu-link {
+  font-size: 3rem;
+  font-weight: 800;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.menu-socials {
+  margin-top: 50px;
+  display: flex;
+  gap: 15px;
+}
+
+.social-link {
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+}

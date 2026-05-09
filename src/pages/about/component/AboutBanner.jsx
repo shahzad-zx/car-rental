@@ -14,7 +14,7 @@ const AboutBanner = () => {
         </div>
 
         {/* 2. Left Side: Overlapping Mobile Image */}
-        <div className="w-full lg:w-2/5 flex justify-center lg:justify-end lg:pr-12 ">
+        <div className=" w-full lg:w-2/5 flex hidden md:block justify-center lg:justify-end lg:pr-12 ">
           <div className="items-start lg:absolute   lg:-bottom-1 lg:left-1 w-[280px] md:w-full z-10">
             <img 
               src={IMAGES.mobile} 
